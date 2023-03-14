@@ -69,6 +69,7 @@ export default {
   // 而是重置为初始值,初始值为data中开始的数据
   mounted() {
     this.ruleForm = { ...this.$store.state.user.userInfo }
+
   }
 
 }

@@ -84,7 +84,7 @@ export default {
   methods: {
     regFN() {
       // 兜底校验
-      console.log(this.$refs)
+
       this.$refs.regFrom.validate(async valid => {
         if (!valid) return
         const { data: res } = await this.$axios.post('/api/reg', this.regFrom)
